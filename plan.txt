@@ -1,0 +1,23 @@
+skal lage et enkelt program som resgistrerer whisky ved bruk av php og ajax.
+
+php står for connection med db og logikken. ajax står for kallet av php script og spa (single-page application).
+
+lager et simplet interface hvor man han resgistrere whisky, man skal skrive inn:
+    id, navn, land, abv, score
+
+man skal også kunne hente ut det som er i databasen, dette kan gjøres med en knapp som sier "skriv ut db"(eller lignende)
+det skal være mulig og slette fra databasen også.
+
+kan ha en dropdown meny for å velge land. her kan man fks ha en json fil med land i, for å lettere oppdatere og skille filer. 
+
+dette skal lagres i en database, bruker MySql.
+
+TODO:
+    1. Lage simplet form i html
+    2. Lage datebase
+    3. Lage php script til å connecte til databasen
+    4. Lage script til å inserte, selecte, delete
+    5. Implementere AJAX for SPA
+
+Maybe:
+    Legge til CSS for å gjøre siden litt finere å se på
