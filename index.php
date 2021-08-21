@@ -15,19 +15,28 @@
         
         <form action="insert.php" method="post" id="whiskyForm" class="from"  onsubmit="return submitFrom();">
             <label for="name">Name: </label><br>
-            <input type ="text" id="name" name="name"><br>
+            <input class="inp" type ="text" id="name" name="name"><br>
 
             <label for="country">Country: </label><br>
-            <input type ="text" id="contry" name="country"><br>
+            <select class="form-select selc"  type ="text" id="contry" name="country">
+                <option selected>Choose a country</option>
+                <option value="Scotland">Scotland</option>
+                <option value="USA">USA</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Japan">Japan</option>
+                <option value="Canada">Canada</option>
+            </select>
 
             <label for="abv">ABV: </label><br>
-            <input type ="number" id="abv" name="abv" min="40" max="90"><br>
+            <input class="inp" type ="number" id="abv" name="abv" min="40" max="90"><br>
 
             <label for="name">Score: </label><br>
-            <input type ="number" id="score" name="score"><br>
+            <input class="inp" type ="number" id="score" name="score"><br>
             <br> 
             <input class="btn btn-outline-primary" type="submit" value="Add Whisky">
             <button class="btn btn-outline-primary" type="button" onclick="fetchData()">Retrive whiskys</button>
+
 			<h3 id="succsess"></h3>
         </form>
         <div id="info"></div>

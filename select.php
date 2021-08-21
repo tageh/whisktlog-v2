@@ -2,11 +2,9 @@
 
 include('connect.php');
 
-$sql = "SELECT * FROM Whisky ORDER BY score DESC";
+$sql = "SELECT * FROM Whisky";
 $query = mysqli_query($conn,$sql) or die(mysqli_error($conn));
 
-//$num = mysqli_num_rows($query);
-//print($num);
 echo "<table class='table-class'>";
 echo "<tr>";
     echo "<th>ID</th>";
